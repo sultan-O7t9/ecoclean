@@ -7,8 +7,17 @@ interface Props {
 
 const {image, title, description} = Astro.props as Props;
 ---
-
-<div class="space-y-4 bg-white relative z-10 ">
+<style>
+    .card:hover{
+     
+        background-image: linear-gradient(to bottom right,#28a1da,#2575ba);
+    }
+    .card:hover p,
+    .card:hover h2{
+        color:white;
+    }
+</style>
+<div class="space-y-4 cursor-pointer bg-white relative z-10 card">
     <img src={image} alt={title} class="h-4/5"/>
     <div class="p-6 space-y-6">
         <h2 class="text-3xl text-[#1d6292] font-degular-semibold">{title}</h2>
