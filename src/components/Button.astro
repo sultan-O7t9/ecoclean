@@ -1,0 +1,13 @@
+---
+interface Props {
+    text: string;
+    link: string;
+    classes?: string;
+}
+
+const {text, link, classes} = Astro.props as Props;
+---
+
+<a class={"py-2 px-4 border-2 block w-fit " + classes} href={link}>
+    {text}
+</a>

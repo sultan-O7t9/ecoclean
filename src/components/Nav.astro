@@ -1,0 +1,101 @@
+---
+import Button from "./Button.astro";
+interface NavItem {
+    title: string;
+    url: string;
+}
+
+const navItems: NavItem[] = [
+    {title: "SERVICES", url: "/services"},
+    {title: "ABOUT US", url: "/about"},
+    {title: "CONTACT US", url: "/contact"},
+    {title: "FAQ", url: "/faqs"},
+    {title: "BLOGS", url: "/blogs"},
+    {title: "REQUEST A QUOTE", url: "/quote"}
+];
+---
+<style>
+    .hamburger {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .nav-toggle .line {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px auto;
+        transition: all 0.3s;
+    }
+    .nav-toggle.rotate .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .nav-toggle.rotate .line2 {
+        opacity: 0;
+    }
+    .nav-toggle.rotate .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    #navItems {
+        transition: transform 0.3s ease-in-out;
+    }
+    #navItems.hidden {
+        transform: translateY(-100%);
+    }
+
+    /* media query to not translate the navItems in large screens */
+    @media (min-width: 768px) {
+        #navItems.hidden {
+            transform: translateY(0);
+        }
+    }
+    #navItems.overlay {
+        position: fixed;
+        top: 20;
+        left: 0;
+        width: 100%;
+        background-color: black ;/* Black background with opacity */
+        z-index: 100;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Full viewport height */
+        padding-top: 20px; /* Optional: for better spacing */
+        box-sizing: border-box;
+    }
+</style>
+
+<nav class="p-4 flex md:flex-row flex-col md:items-center md:justify-between">
+    <div class="flex justify-between">
+        <img src="/images/logo.png" alt="Eco Clean Logo" class="h-16"/>
+        <button id="toggleButton" class="hamburger md:hidden z-[1000]">
+            <div class="nav-toggle">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+        </button>
+    </div>
+    <div id="navItems" class="hidden md:flex flex-row items-center gap-2 text-[#62DD28] w-full justify-end">
+        <ul class="flex md:flex-row flex-col gap-2">
+            {navItems.map((item) => (
+                <li>
+                    <a href={item.url} class="text-nowrap mx-4 font-degular-medium">{item.title}</a>
+                </li>
+            ))}
+        </ul>
+        <Button text="IMMEDIATE BOOKING" link="null" classes="border-blue-800 font-degular-medium"></Button>
+    </div>
+    <div></div>
+</nav>
+
+<script>
+    const toggleButton = document.getElementById('toggleButton');
+    const navItems = document.getElementById('navItems');
+
+    toggleButton?.addEventListener('click', () => {
+        toggleButton?.firstElementChild?.classList.toggle('rotate');
+        navItems?.classList.toggle('hidden');
+        navItems?.classList.toggle('overlay'); // Toggle overlay class for mobile
+    });
+</script>
