@@ -14,6 +14,9 @@ export default {
         ],
         "urbaneRounded-medium": ["UrbaneRounded-Medium"],
       },
+      colors: {
+        primary: "#2986c7",
+      },
     },
   },
   plugins: [],
