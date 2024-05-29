@@ -7,13 +7,48 @@ interface Props {
 const {question, answer} = Astro.props as Props;
 ---
 
-<details class="px-10 py-7 cursor-pointer bg-white space-y-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="120">
-    <summary class="text-3xl font-degular-semibold  text-[#1d6292]">{question}</summary>
+<details class="px-10 py-7 cursor-pointer bg-white space-y-2 faq-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="120">
+    <summary class="flex items-center justify-between">
+        <span class="text-2xl md:text-3xl font-degular-semibold  text-[#1d6292]">{question}</span><span class="text-5xl md:text-7xl text-[#009900] toggle-icon">+</span>
+    </summary>
+    
     <p class="text-xl font-urbaneRounded-medium">{answer}</p>
 </details>
 
 <style>
     summary {
-        list-style-type: "+ ";
+        list-style-type: "";
     }
 </style>
+
+<script>
+    const faqContainers = document.getElementsByClassName('faq-container');
+    // const toggleIcon = document.getElementsByClassName('toggle-icon');
+    
+    if(faqContainers &&faqContainers.length){
+        [...faqContainers].forEach(container=>{
+            container.addEventListener("click", (event) => {
+
+                const toggleIcon=container.querySelector('.toggle-icon')
+        if (!container.open) {
+          if(toggleIcon)
+              toggleIcon.innerHTML="-"
+        } else {
+          if(toggleIcon)
+          toggleIcon.innerHTML="+"
+      
+        }
+      });
+        })
+    }
+
+    
+
+  
+
+    toggleButton?.addEventListener('click', () => {
+        toggleButton?.firstElementChild?.classList.toggle('rotate');
+        navItems?.classList.toggle('hidden');
+        navItems?.classList.toggle('overlay'); // Toggle overlay class for mobile
+    });
+</script>
