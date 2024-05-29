@@ -30,6 +30,7 @@ const {question, answer} = Astro.props as Props;
             container.addEventListener("click", (event) => {
 
                 const toggleIcon=container.querySelector('.toggle-icon')
+                //@ts-expect-error: Open exists on details
         if (!container.open) {
           if(toggleIcon)
               toggleIcon.innerHTML="-"
