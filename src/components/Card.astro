@@ -1,11 +1,14 @@
 ---
+import { twMerge } from 'tailwind-merge'
+
 interface Props {
     image?: string;
     title: string;
     description: string;
+    classes?:string;
 }
 
-const {image, title, description} = Astro.props as Props;
+const {image, title, description,classes} = Astro.props as Props;
 ---
 <style>
     .card:hover{
@@ -17,7 +20,7 @@ const {image, title, description} = Astro.props as Props;
         color:white;
     }
 </style>
-<div class="space-y-4 cursor-pointer bg-white relative z-10 card">
+<div class={twMerge("space-y-4 cursor-pointer bg-white relative z-10 card",classes)}>
     <img src={image} alt={title} class="h-4/5"/>
     <div class="p-6 space-y-6">
         <h2 class="text-3xl text-[#1d6292] font-degular-semibold">{title}</h2>
