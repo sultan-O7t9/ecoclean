@@ -47,7 +47,7 @@ import Footer from "@components/Footer.astro";
         <p class="text-[#85cd32] font-urbaneRounded-medium mb-10">
             NON-TOXIC CLEANING TEAM, HUNTINGTON BEACH, CA
           </p>
-          <h3 class="font-degular-semibold text-2xl md:text-5xl max-w-[700px]  text-[#1d6292] tracking-widest mb-10">COMPANY BACKGROUND AND HISTORY</h3>
+          <h3 class="font-degular-semibold text-2xl md:text-5xl max-w-[700px]  text-[#1d6292]  mb-10">COMPANY BACKGROUND AND HISTORY</h3>
           <p class="font-degular-semibold max-w-[440px]  text-xl mb-10">Rooted in Community, Propelled by Sustainability:
             The Comprehensive Eco Clean Origin Story and Our Journey to Green Excellence, Embarking on a Path of Eco-Friendly Innovation and Community Transformation</p>
             <p class="font-urbaneRounded-medium  max-w-[500px]">Founded in the heart of Huntington Beach, Eco Clean is the brainchild of three lifelong friends with a shared passion for sustainability and community service. Our journey began as an apprenticeship under a seasoned local businessman, from whom we learned the intricacies of the cleaning industry and the importance of eco-friendly practices. Today, Eco Clean stands as a testament to professional, quality, and environmentally conscious cleaning services, catering to both residential and commercial clients with a wide range of needs.</p>
@@ -75,30 +75,30 @@ import Footer from "@components/Footer.astro";
     </p>
 
     <div class="grid md:grid-cols-3 grid-cols-1 gap-8 justify-between items-center">
-      <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='100'>
+      <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='100' class="h-full" >
 
-        <Card
-          image="/images/carpet-cleaning.jpg"
+        <Card classes="h-full"
+          image="/images/about-carpet.png"
           title="Carpet Cleaning"
-          description="Dive deep into the fibers of your carpet, where our eco-friendly methods lift away dirt and restore vebrancy."
+          description="Dive deep into the fibers of your carpet, where our eco-friendly methods lift away dirt and restore vibrancy."
         />
       </div>
-      <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='200'>
+      <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='200' class="h-full" >
      
 
-        <Card 
-          image="/images/power-washing.png"
-          title="Power Washing"
-          description="Blast away grime and restore the original beauty of your exteriors with our powerful, eco-conscious power washing servicse."
+        <Card classes="h-full"
+          image="/images/about-sofa.png"
+          title="Sofa Cleaning"
+          description="Blast away grime and restore the original beautRejuvenate your furniture with our gentle, yet effective cleaning techniques that renew fabric and extend its life."
         />
       </div>
-      <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='300'>
+      <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='300' class="h-full" >
 
 
-        <Card 
-          image="/images/dumpster-cleaning.png"
-          title="Dumpster Cleaning"
-          description="Eliminate odors and bacteria with our thorough sumpster cleaning, ensuring a hygienic and pleasent environment."
+        <Card classes="h-full"
+          image="/images/about-power.png"
+          title="Power Washing"
+          description="Blast away grime and restore the original beauty of your exteriors with our powerful, eco-conscious power washing services."
         />
       </div>
     </div>
@@ -120,7 +120,7 @@ import Footer from "@components/Footer.astro";
 
 <section class="pb-10 px-10 md:pb-28 md:px-20 lg:px-44 flex flex-col md:flex-row gap-8">
     <div class="flex-1 flex flex-col gap-14 mt-6 md:mt-0">
-        <img src="/images/about-2.jpg" class="w-full" />
+        <img src="/images/mission.png" class="w-full" />
         <Button data-aos="fade-up" data-aos-duration="800" data-aos-delay="20"
         text="CONTACT US"
         link="/services"
@@ -133,8 +133,8 @@ import Footer from "@components/Footer.astro";
         <p class="text-[#85cd32] font-urbaneRounded-medium mb-8">
             RENEWABLE CLEANING COMMITMENT, HUNTINGTON BEACH, CA
           </p>
-          <h3 class="font-degular-semibold text-[2rem] md:text-5xl max-w-[700px]  text-[#1d6292] tracking-widest mb-8">MISSION, VALUES, AND COMMITMENT</h3>
-          <p class="font-degular-semibold max-w-[440px]  text-xl mb-8">Our Core Beliefs and Promises: An In-Depth Look at Eco Clean’s Mission, Values, and Steadfast Commitment to Quality Service, Underpinning Our Ethos of Responsibility and Excellence in Cleaning</p>
+          <h3 class="font-degular-semibold text-[2rem] md:text-5xl max-w-[700px]  text-[#1d6292] tracking-wide leading-loose mb-8">MISSION, VALUES, AND COMMITMENT</h3>
+          <p class="font-degular-semibold max-w-[480px]  text-xl mb-8 leading-relaxed">Our Core Beliefs and Promises: An In-Depth Look at Eco Clean’s Mission, Values, and Steadfast Commitment to Quality Service, Underpinning Our Ethos of Responsibility and Excellence in Cleaning</p>
             <p class="font-urbaneRounded-medium  max-w-[500px]">Our mission at Eco Clean is simple yet profound: "We can’t clean up your past, but we can provide a cleaner future." This philosophy is at the core of everything we do, guiding our commitment to delivering professional, high-quality, and eco-friendly cleaning experiences. Our values of sustainability, customer satisfaction, and excellence drive our operations and service delivery, ensuring that we not only meet but exceed the expectations of our clients.
 <br/>
 <br/>
@@ -156,7 +156,7 @@ import Footer from "@components/Footer.astro";
       <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='100'>
 
         <Card
-          image="/images/brain.jpg"
+          image="/images/brian-about.png"
           title="Brian Giannone" classes="pb-5"
           description=""
         ><a class="text-lg font-urbaneRounded-medium underline underline-offset-2">Get to Know Brian</a></Card>
@@ -165,7 +165,7 @@ import Footer from "@components/Footer.astro";
      
 
         <Card 
-          image="/images/dustin.jpg"
+          image="/images/dustin-about.png"
           title="Dustin Dahlen" classes="pb-5"
           description=""
         ><a class="text-lg font-urbaneRounded-medium underline underline-offset-2">Get to Know Dustin</a></Card>
@@ -174,7 +174,7 @@ import Footer from "@components/Footer.astro";
 
 
         <Card 
-          image="/images/kyle.jpg"
+          image="/images/kyle-about.png"
           title="Kyle Cook" classes="pb-5"
           description=""
         ><a class="text-lg font-urbaneRounded-medium underline underline-offset-2 pb-3">Get to Know Kyle</a></Card>

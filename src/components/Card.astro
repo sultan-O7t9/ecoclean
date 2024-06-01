@@ -21,10 +21,10 @@ const {image, title, description,classes} = Astro.props as Props;
     }
 </style>
 <div class={twMerge("space-y-4 cursor-pointer bg-white relative z-10 card",classes)}>
-    <img src={image} alt={title} class="h-4/5"/>
+    <img src={image} alt={title} class="h-[55%] w-full object-cover"/>
     <div class="p-6 space-y-6">
-        <h2 class="text-3xl text-[#1d6292] font-degular-semibold">{title}</h2>
-        <p class="font-urbaneRounded-medium">{description}</p>
+        <h2 class="text-4xl text-[#1d6292] font-degular-semibold">{title}</h2>
+        <p class="font-urbaneRounded-medium text-lg">{description}</p>
         <slot/>
     </div>
 </div>

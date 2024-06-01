@@ -13,6 +13,7 @@ export default {
           ...defaultTheme.fontFamily.sans,
         ],
         "urbaneRounded-medium": ["UrbaneRounded-Medium"],
+        "urbaneRounded-light": ["UrbaneRounded-Light"],
       },
       colors: {
         primary: "#2986c7",
