@@ -14,7 +14,7 @@ import Footer from "@components/Footer.astro";
 >
   <!-- Hero Section -->
   <main
-    class="px-4 pb-4 space-y-2 md:h-[70vh] h-[70vh] max-h-[560px] md:max-h-[auto] bg-[url('/images/about-bg.jpg')]  bg-no-repeat bg-[length:76%_100%] flex md:flex-wrap flex-col md:flex-row items-start"
+    class="px-4 pb-4 space-y-2 md:h-[70vh] min-h-[70vh]  md:max-h-[auto] bg-[url('/images/about-bg.jpg')]  bg-no-repeat bg-[length:76%_100%] flex md:flex-wrap flex-col md:flex-row items-start"
   >
     <Nav />
    
@@ -23,7 +23,7 @@ import Footer from "@components/Footer.astro";
           class="md:px-20 lg:px-44 px-4 flex flex-col md:w-1/2 w-full flex-1 justify-center tracking-widest lg:pt-20 order-3 md:order-1"
         >
           <div class="">
-            <h1 class="font-urbaneRounded-medium md:text-6xl text-6xl grid  text-[#268dcb] my-2">
+            <h1 class="font-urbaneRounded-medium md:text-6xl text-4xl grid  text-[#268dcb] my-2">
               ABOUT US
             </h1>
             <p class="font-urbaneRounded-medium text-2xl grid text-[#85cc32] my-6 leading-10 uppercase">
@@ -47,7 +47,7 @@ import Footer from "@components/Footer.astro";
         <p class="text-[#85cd32] font-urbaneRounded-medium mb-10">
             NON-TOXIC CLEANING TEAM, HUNTINGTON BEACH, CA
           </p>
-          <h3 class="font-degular-semibold text-2xl md:text-5xl max-w-[700px]  text-[#1d6292]  mb-10">COMPANY BACKGROUND AND HISTORY</h3>
+          <h3 class="font-degular-semibold text-4xl md:text-6xl max-w-[700px]  text-[#1d6292]  mb-10">COMPANY BACKGROUND AND HISTORY</h3>
           <p class="font-degular-semibold max-w-[440px]  text-xl mb-10">Rooted in Community, Propelled by Sustainability:
             The Comprehensive Eco Clean Origin Story and Our Journey to Green Excellence, Embarking on a Path of Eco-Friendly Innovation and Community Transformation</p>
             <p class="font-urbaneRounded-medium  max-w-[500px]">Founded in the heart of Huntington Beach, Eco Clean is the brainchild of three lifelong friends with a shared passion for sustainability and community service. Our journey began as an apprenticeship under a seasoned local businessman, from whom we learned the intricacies of the cleaning industry and the importance of eco-friendly practices. Today, Eco Clean stands as a testament to professional, quality, and environmentally conscious cleaning services, catering to both residential and commercial clients with a wide range of needs.</p>
@@ -67,39 +67,45 @@ import Footer from "@components/Footer.astro";
     <p class="text-[#85cd32] font-urbaneRounded-medium" data-aos="fade-right" data-aos-duration="600">
       SUSTAINABLE CLEANING SERVICE, HUNTINGTON BEACH, CA
     </p>
-    <h2 class="text-[2rem] md:text-[3.25rem] text-[#1d6292] font-degular-semibold mb-2" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50">FEATURED SERVICES</h2>
+    <h2 class="text-4xl md:text-6xl text-[#d6e7f4] font-degular-semibold mb-2" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50">FEATURED SERVICES</h2>
     <p class="font-urbaneRounded-medium mb-16" data-aos="fade-right" data-aos-duration="700" data-aos-delay="100">
       Showcasing Our Cleaning Mastery, Detailed Precision in Every Task Elevates
       Your Space with Unmatched Expertise That Distinguishes Us in the Market,
       Ensuring Unrivaled Quality and Service
     </p>
 
-    <div class="grid md:grid-cols-3 grid-cols-1 gap-8 justify-between items-center">
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-8 justify-between ">
       <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='100' class="min-h-[100%]" >
+        <a href="/services/carpet-cleaning">
 
         <Card classes="min-h-[100%]"
           image="/images/about-carpet.png"
           title="Carpet Cleaning"
           description="Dive deep into the fibers of your carpet, where our eco-friendly methods lift away dirt and restore vibrancy."
         />
+        </a>
       </div>
       <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='200' class="min-h-[100%]" >
      
+        <a href="/services/sofa-cleaning">
 
         <Card classes="min-h-[100%]"
           image="/images/about-sofa.png"
           title="Sofa Cleaning"
           description="Blast away grime and restore the original beautRejuvenate your furniture with our gentle, yet effective cleaning techniques that renew fabric and extend its life."
         />
+        </a>
       </div>
       <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='300' class="min-h-[100%]" >
 
+        <a href="/services/power-washing">
 
         <Card classes="min-h-[100%]"
           image="/images/about-power.png"
           title="Power Washing"
           description="Blast away grime and restore the original beauty of your exteriors with our powerful, eco-conscious power washing services."
         />
+        </a>
       </div>
     </div>
   </section>
@@ -108,7 +114,7 @@ import Footer from "@components/Footer.astro";
   class="md:px-20 lg:px-44 px-8 md:pt-36 md:pb-28 pt-16 pb-12 text-white text-center bg-[url('/images/bg-pattern-2.jpg')] bg-cover bg-no-repeat md:-translate-y-32 relative z-0"
 >
   
-  <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="50" class="text-5xl  font-degular-semibold mb-7">CONNECT WITH ECO CLEAN TODAY</h2>
+  <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="50" class="text-4xl md:text-6xl  font-degular-semibold mb-7">CONNECT WITH ECO CLEAN TODAY</h2>
   <div class="w-full flex justify-center items-center ">
     <Button
       text="REQUEST A QUOTE"
@@ -133,7 +139,7 @@ import Footer from "@components/Footer.astro";
         <p class="text-[#85cd32] font-urbaneRounded-medium mb-8">
             RENEWABLE CLEANING COMMITMENT, HUNTINGTON BEACH, CA
           </p>
-          <h3 class="font-degular-semibold text-[2rem] md:text-5xl max-w-[700px]  text-[#1d6292] tracking-wide leading-loose mb-8">MISSION, VALUES, AND COMMITMENT</h3>
+          <h3 class="font-degular-semibold text-4xl md:text-5xl max-w-[700px]  text-[#1d6292]  mb-8">MISSION, VALUES, AND COMMITMENT</h3>
           <p class="font-degular-semibold max-w-[480px]  text-xl mb-8 leading-relaxed">Our Core Beliefs and Promises: An In-Depth Look at Eco Clean’s Mission, Values, and Steadfast Commitment to Quality Service, Underpinning Our Ethos of Responsibility and Excellence in Cleaning</p>
             <p class="font-urbaneRounded-medium  max-w-[500px]">Our mission at Eco Clean is simple yet profound: "We can’t clean up your past, but we can provide a cleaner future." This philosophy is at the core of everything we do, guiding our commitment to delivering professional, high-quality, and eco-friendly cleaning experiences. Our values of sustainability, customer satisfaction, and excellence drive our operations and service delivery, ensuring that we not only meet but exceed the expectations of our clients.
 <br/>
@@ -147,7 +153,7 @@ import Footer from "@components/Footer.astro";
     <p class="text-[#85cd32] font-urbaneRounded-medium" data-aos="fade-right" data-aos-duration="600">
         ENVIRONMENTALLY SAFE CLEANING VALUES, HUNTINGTON BEACH, CA
     </p>
-    <h2 class="text-[2rem] md:text-[3.25rem] text-[#1d6292] font-degular-semibold mb-2" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50">TEAM INFORMATION AND CREDENTIALS</h2>
+    <h2 class="text-4xl md:text-6xl text-[#1d6292] font-degular-semibold mb-2" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50">TEAM INFORMATION AND CREDENTIALS</h2>
     <p class="font-urbaneRounded-medium mb-16" data-aos="fade-right" data-aos-duration="700" data-aos-delay="100">
         Introducing the Eco Clean Family: The Driving Force Behind Our Cleaning Excellence and Unyielding Dedication, Embodied in Every Service and Customer Interaction
     </p>
@@ -188,7 +194,7 @@ import Footer from "@components/Footer.astro";
   >
     <div class="p-4 md:p-8 text-center flex flex-col items-center ">
       <p class="font-urbaneRounded-medium mb-6">BIODEGRADABLE SERVICE PHILOSOPHY, HUNTINGTON BEACH, CA</p>
-      <h2 class="text-3xl md:text-[3rem]  font-degular-semibold max-w-[800px] text-center md:leading-[4rem] mb-8">
+      <h2 class="text-4xl md:text-5xl  font-degular-semibold max-w-[1200px] text-center md:leading-[4rem] mb-8">
         JOIN THE ECO CLEAN REVOLUTION:<br/>
 CLEANLINESS MEETS SUSTAINABILITY
       </h2>
@@ -212,7 +218,7 @@ CLEANLINESS MEETS SUSTAINABILITY
   <section id='faq' class=" md:px-20 lg:px-44 px-8  py-16 text-center bg-[#EEFAF5] ">
     <div class="flex items-center flex-col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="120">
       <p class="text-[#85cd32] font-urbaneRounded-medium mb-4">SUSTAINABLE QUALITY PROMISE, HUNTINGTON BEACH, CA </p>
-      <h2 class=" text-[#1d6292] font-degular-semibold text-[2.75rem] mb-6">FAQS</h2>
+      <h2 class=" text-[#1d6292] font-degular-semibold text-4xl md:text-6xl mb-6">FAQS</h2>
       <p class="font-urbaneRounded-medium max-w-[1000px] text-center mb-16">
         Diving Deep to Address Your Queries: Providing Comprehensive Clarity and Demonstrating Our Expertise with Detailed, Insightful Answers to Foster Understanding and Trust in Our Exceptional Cleaning Services
       </p>

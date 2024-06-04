@@ -14,7 +14,7 @@ import Footer from "@components/Footer.astro";
 >
   <!-- Hero Section -->
   <main
-    class="px-4 pb-4 space-y-2 md:h-[70vh] h-[70vh] max-h-[560px] md:max-h-[auto] bg-[url('/images/about-bg.jpg')]  bg-no-repeat bg-[length:76%_100%] flex md:flex-wrap flex-col md:flex-row items-start"
+    class="px-4 pb-4 space-y-2 md:h-[70vh] min-h-[70vh]  md:max-h-[auto] bg-[url('/images/about-bg.jpg')]  bg-no-repeat bg-[length:76%_100%] flex md:flex-wrap flex-col md:flex-row items-start"
   >
     <Nav />
    
@@ -23,7 +23,7 @@ import Footer from "@components/Footer.astro";
           class="md:px-20 lg:px-44 px-4 flex flex-col md:w-1/2 w-full flex-1 justify-center tracking-widest lg:pt-20 order-3 md:order-1"
         >
           <div class="">
-            <h1 class="font-urbaneRounded-medium md:text-6xl text-6xl grid  text-[#268dcb] my-2">
+            <h1 class="font-urbaneRounded-medium md:text-6xl text-4xl grid  text-[#268dcb] my-2">
               OUR SERVICES
             </h1>
             <p class="font-urbaneRounded-medium text-2xl max-w-[500px] grid text-[#85cc32] my-6 leading-10 uppercase">
@@ -50,7 +50,7 @@ Sustainable Cleaning Solutions
         <p class="text-[#85cd32] font-urbaneRounded-medium mb-10">
             CLEANING SERVICES OFFERED, HUNTINGTON BEACH, CA
           </p>
-          <h3 class="font-degular-semibold text-2xl md:text-5xl max-w-[700px]  text-[#1d6292]  mb-10">COMPREHENSIVE CLEANING WITH A CONSCIENCE</h3>
+          <h3 class="font-degular-semibold text-4xl md:text-5xl max-w-[700px]  text-[#1d6292]  mb-10">COMPREHENSIVE CLEANING WITH A CONSCIENCE</h3>
           <p class="font-degular-semibold max-w-[460px]  text-xl mb-10">Meticulously Crafting a Bespoke Cleaning Experience, Thoughtfully Aligned with the Unique Dynamics of Your Space, Reflecting Our Commitment to Personalized Service and Environmental Care</p>
             <p class="font-urbaneRounded-medium  max-w-[520px]">At Eco Clean, we take pride in offering a comprehensive range of cleaning services designed to meet the unique needs of both residential and commercial clients. Our commitment to sustainability and excellence drives us to deliver not just cleanliness, but a healthier, more environmentally friendly space for you and your community.</p>
     </div>
@@ -69,57 +69,68 @@ Sustainable Cleaning Solutions
     <p class="text-[#85cd32] font-urbaneRounded-medium" data-aos="fade-right" data-aos-duration="600">
         ECO-FRIENDLY CLEANING OPTIONS, HUNTINGTON BEACH, CA
     </p>
-    <h2 class="text-[2rem] md:text-[3.25rem] text-[#1d6292] font-degular-semibold mb-2" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50">SERVICES</h2>
+    <h2 class="text-4xl md:text-6xl text-[#1d6292] font-degular-semibold mb-2" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50">SERVICES</h2>
     <p class="font-urbaneRounded-medium mb-16" data-aos="fade-right" data-aos-duration="700" data-aos-delay="100">
         Showcasing Our Cleaning Mastery: Detailed Precision in Every Task Elevates Your Space with Unmatched Expertise That Distinguishes Us in the Market, Ensuring Unrivaled Quality and Service
     </p>
 
     <div class="grid md:grid-cols-3 grid-cols-1 gap-8 justify-between ">
       <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='100' class="min-h-[100%]" >
+        <a href="/services/carpet-cleaning">
 
         <Card classes="min-h-[100%]"
           image="/images/services-carpet.png"
           title="Carpet Cleaning"
           description="Experience the deep clean of Eco Clean’s carpet service, where we use eco-friendly methods to remove dirt, allergens, and stains, revitalizing your carpets and enhancing your indoor air quality. Our thorough process not only cleans but also prolongs the life of your carpets, ensuring lasting comfort and beauty. Specialized equipment and techniques allow us to penetrate deep into the fibers, extracting hidden dirt and allergens that traditional methods might miss, while our eco-friendly solutions leave your carpets safe for pets and children."
         />
+        </a>
       </div>
       <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='200' class="min-h-[100%]" >
      
+        <a href="/services/sofa-cleaning">
 
         <Card classes="min-h-[100%]"
           image="/images/services-sofa.png"
           title="Sofa Cleaning"
           description="Keep your sofa fresh, clean, and free of pollutants with our specialized furniture cleaning services, ensuring your furnishings look and feel great while being gentle on the environment. We treat every piece of furniture with care, targeting spots and wear to restore its original luster. Our fabric-friendly approach adjusts to the unique material of each item, ensuring thorough cleaning without risking damage, and our protective treatments help extend the life and appearance of your furniture."
         />
+        </a>
       </div>
       <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='300' class="min-h-[100%]" >
 
+        <a href="/services/power-washing">
 
         <Card classes="min-h-[100%]"
           image="/images/services-power.png"
           title="Power Washing"
           description="Our power washing services effectively remove built-up grime and dirt from exterior surfaces, revitalizing the appearance of your property with minimal environmental impact. This service is ideal for restoring the look of your buildings, driveways, and patios, making them look new again. We use eco-friendly cleaning solutions in conjunction with high-pressure water jets to strip away years of dirt and weathering, revealing the underlying beauty while ensuring the structural integrity of the surfaces."
         />
+        </a>
       </div>
       <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='300' class="min-h-[100%]" >
 
+        <a href="/services/dumpster-cleaning">
 
         <Card classes="min-h-[100%]"
           image="/images/services-dumpster.png"
           title="Dumpster Cleaning"
           description="Maintain a hygienic and odor-free environment with our dumpster cleaning services, reducing pests and promoting better sanitation around your premises. Regular cleaning of dumpsters prevents pest infestations and eliminates harmful bacteria and unpleasant smells. Our comprehensive approach not only cleans but also disinfects and deodorizes, providing a thorough solution that tackles both the visible and invisible issues, ensuring your waste management areas are both clean and compliant with health standards."
         />
+        </a>
       </div>
       <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='300' class="min-h-[100%]" >
 
+        <a href="/services/industrial-floor-cleaning">
 
         <Card classes="min-h-[100%]"
           image="/images/services-floor.png"
           title="Industrial Floor Cleaning"
           description="Our industrial floor cleaning services are designed to tackle the tough conditions of manufacturing plants, warehouses, and other industrial settings. Using sustainable methods and robust cleaning solutions, we effectively remove oil, grease, and industrial residue, enhancing the safety and appearance of your floors. Our skilled technicians operate state-of-the-art machinery to deeply cleanse and protect your flooring, ensuring it can withstand the rigors of industrial activity and maintain its integrity over time. With our specialized approach, we not only clean but also contribute to the longevity and performance of your industrial floors."
         />
+        </a>
       </div>
       <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='300' class="min-h-[100%]" >
+        <a href="/services/sidewalk-and-concrete-cleaning">
 
 
         <Card classes="min-h-[100%]"
@@ -127,6 +138,7 @@ Sustainable Cleaning Solutions
           title="Sidewalk & Concrete Cleaning"
           description="Enhance the curb appeal of your property with our sidewalk and concrete cleaning services, removing stains and buildup safely and effectively. Our techniques not only clean but also protect your outdoor areas, preventing long-term wear and tear from the elements. With the use of eco-friendly cleaning agents and professional-grade equipment, we ensure thorough removal of contaminants and stains, boosting the aesthetic and structural integrity of your walkways and concrete surfaces."
         />
+        </a>
       </div>
     </div>
   </section>
@@ -135,7 +147,7 @@ Sustainable Cleaning Solutions
   class="md:px-20 lg:px-44 px-8 md:pt-36 md:pb-28 pt-16 pb-12 text-white text-center bg-[url('/images/bg-pattern-2.jpg')] bg-cover bg-no-repeat md:-translate-y-32 relative z-0"
 >
   
-  <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="50" class="text-5xl  font-degular-semibold mb-7">CONNECT WITH ECO CLEAN TODAY</h2>
+  <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="50" class="text-4xl md:text-6xl  font-degular-semibold mb-7">CONNECT WITH ECO CLEAN TODAY</h2>
   <div class="w-full flex justify-center items-center ">
     <Button
       text="REQUEST A QUOTE"
@@ -160,7 +172,7 @@ Sustainable Cleaning Solutions
         <p class="text-[#85cd32] font-urbaneRounded-medium mb-8">
             GREEN CLEANING SERVICES, HUNTINGTON BEACH, CA
           </p>
-          <h3 class="font-degular-semibold text-[2rem] md:text-5xl max-w-[560px]  text-[#1d6292] tracking-wide leading-loose mb-8">CHOOSE ECO CLEAN FOR A CLEANER, GREENER FUTURE
+          <h3 class="font-degular-semibold text-[2rem] text-4xl md:text-5xl max-w-[560px]  text-[#1d6292]  mb-8">CHOOSE ECO CLEAN FOR A CLEANER, GREENER FUTURE
 
           </h3>
           <p class="font-degular-semibold max-w-[500px]  text-xl mb-8 ">Navigate Towards a Cleaner, Greener Tomorrow: Embracing Sustainable Practices to Forge a Future Where Cleanliness and Environmental Responsibility Coexist, Pioneering Eco-Friendly Innovations in Cleaning</p>
@@ -185,7 +197,7 @@ Let us help you create a cleaner, brighter, and more sustainable space with our 
   >
     <div class="p-4 md:p-8 text-center flex flex-col items-center ">
       <p class="font-urbaneRounded-medium mb-6">RESIDENTIAL CLEANING SERVICES, HUNTINGTON BEACH, CA</p>
-      <h2 class="text-3xl md:text-[3rem]  font-degular-semibold max-w-[800px] text-center md:leading-[4rem] mb-8">
+      <h2 class="text-4xl md:text-6xl  font-degular-semibold max-w-[800px] text-center md:leading-[4rem] mb-8">
         EMBRACE A SPOTLESS, SUSTAINABLE
         LIFESTYLE WITH ECO CLEAN
       </h2>
@@ -209,7 +221,7 @@ Let us help you create a cleaner, brighter, and more sustainable space with our 
   <section id='faq' class=" md:px-20 lg:px-44 px-8  py-16 text-center bg-[#EEFAF5] ">
     <div class="flex items-center flex-col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="120">
       <p class="text-[#85cd32] font-urbaneRounded-medium mb-4">NON-TOXIC CLEANING SERVICES, HUNTINGTON BEACH, Ca </p>
-      <h2 class=" text-[#1d6292] font-degular-semibold text-[2.75rem] mb-6">FAQS</h2>
+      <h2 class=" text-[#1d6292] font-degular-semibold text-4xl md:text-6xl mb-6">FAQS</h2>
       <p class="font-urbaneRounded-medium max-w-[1000px] text-center mb-16">
         Diving Deep to Address Your Queries: Providing Comprehensive Clarity and Demonstrating Our Expertise with Detailed, Insightful Answers to Foster Understanding and Trust in Our Exceptional Cleaning Services
       </p>
