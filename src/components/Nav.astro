@@ -3,10 +3,15 @@ import Button from "./Button.astro";
 interface NavItem {
     title: string;
     url: string;
+    children?:NavItem[]
 }
 
 const navItems: NavItem[] = [
-{title: "SERVICES", url: "/services"},
+{title: "SERVICES", url: "/services",children:[
+    {title:"SERVICES",url:"/services"},
+    {title:"POWER WASHING SERVICE",url:"/services/power-washing"},
+    {title:"CARPET CLEANING SERVICE",url:"/services/carpet-cleaning"},
+]},
     {title: "ABOUT US", url: "/about"},
     {title: "CONTACT US", url: "/contact"},
     {title: "FAQ", url: "/faqs"},
@@ -63,74 +68,16 @@ const navItems: NavItem[] = [
         padding-top: 20px; /* Optional: for better spacing */
         box-sizing: border-box;
     }
+    /* --------------- */
 
-    .list-choice{
-  
-  position: relative;
-  cursor: pointer;  
-}
-.list-choice input[type="radio"]{
-  position:absolute;
-  left:-9999px;
+    ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
 }
 
-.list-choice-title {
-color:#87cf32;
-display: block;
-text-align: center;
-position:relative;
-z-index: 10;
-box-sizing: border-box;
-}
 
-.list-choice input[type="radio"] + span {
-/* color: #FFF; */
-/* background: #D8D8D8; */
-/* padding: 0.55em 1em; */
-text-wrap: nowrap;
-display: block;
-text-align: center;
-box-sizing: border-box;
-cursor: pointer;
-/* width: 100%; */
-}
-.list-choice-objects {
-position: absolute;
-top: 0;
-padding-top: 2.1em;
-box-sizing: border-box;
-background-color: white;
-overflow: hidden;
-max-height: 0;
-transition: all 250ms ease;
-}
-.list-choice:hover .list-choice-objects  input[type="radio"] + span {
-position: relative;
-top: 0;
-transition: all 250ms ease-in-out;
-}
-.list-choice:hover input[type="radio"] + span:hover {
-background:#BBB;
-}
-.list-choice:hover input[type="radio"]:checked + span:hover {
-background:#74D68E;
-}
-.list-choice input[type="radio"]:checked + span {
-background: #74D68E;
-position: absolute;
-top: 0em;
-border-radius: 0.2em;
-}
-.list-choice:hover input[type="radio"]:checked + span {
-border-radius: 0;
-}
-.list-choice:hover .list-choice-objects label:nth-last-of-type(1) input[type="radio"]:checked + span{
-  border-radius:0 0 0.2em 0.2em;
-}
-
-.list-choice:hover .list-choice-objects {
-max-height: 540px;
-}
 </style>
 
 <nav class="md:px-10 lg:px-16 py-6 lg:py-8 flex md:flex-row flex-col md:items-center md:justify-between w-full">
@@ -148,27 +95,28 @@ max-height: 540px;
         </button>
     </div>
     <div id="navItems" class="hidden md:flex flex-row items-center gap-2 text-[#87cf32] w-full justify-end">
-        <ul class="flex md:flex-row flex-col gap-2">
-            <!-- <li class="services-dd">
-                <div class="list-choice">
-                    <div class="list-choice-title">SERVICES</div>
-                    <div class="list-choice-objects">
-                      <label>
-                        <input type="radio" name="month"/>                         <span>CARPET CLEANING SERVICE</span>
-                      </label>
-                   
-                      <label>
-                        <input type="radio" name="month"/>                         <span>November</span>
-                      </label>
-                      <label>
-                        <input type="radio" name="month"/>                         <span>December</span>
-                      </label>
-                    </div>
-                  </div>
-            </li> -->
+        <ul class="flex md:flex-row flex-col gap-2 list-none">
             {navItems.map((item) => (
-                <li class="mx-4 transition-all duration-300 hover:text-white">
+                <li class="mx-4 transition-all duration-300 hover:text-white relative">
                     <a href={item.url} class="text-lg text-nowrap font-degular-medium">{item.title}</a>
+                    {
+                        item.children && item.children.length?
+                        <ul class="dropdown invisible opacity-0 absolute transition-all duration-[0.5s] ease-[ease] hidden pt-1  pb-2 left-0 bg-white  min-w-[200px] rounded-sm">
+                            {
+                                item.children.map(subItem=>
+
+                        <li class=" text-nowrap text-[#1e1e1e] hover:bg-[#268dcb] font-degular-medium uppercase hover:text-white cursor-pointer px-5 py-1">
+                            <a  href={subItem.url}>
+                            {subItem.title}
+                            </a>
+                            </li>
+                                )
+                            }
+                      
+                </ul>
+                        
+                        :null
+                    }
                 </li>
             ))}
         </ul>
