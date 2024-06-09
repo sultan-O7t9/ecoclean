@@ -1,0 +1,99 @@
+---
+import Base from "@layouts/Base.astro";
+import Nav from "@components/Nav.astro";
+import Button from "@components/Button.astro";
+import Card from "@components/Card.astro";
+import FAQ from "@components/Landing/FAQ.astro";
+import Footer from "@components/Footer.astro";
+---
+
+<Base
+  title="Eco Clean Professional Service"
+  description="Expertly Crafting Exceptional Spaces, Enriching Lives Through Thoughtful, Sustainable Transformation with Our Commitment to Eco-Friendly Practices and Community Enhancement"
+  image="image/og-image.jpeg"
+>
+  <!-- Hero Section -->
+  <main
+    class="px-4 pb-4 space-y-2 md:h-[70vh] bg-[url('/images/bg.jpg')] bg-cover bg-no-repeat flex flex-wrap items-start"  style="background-image: url('/images/contact-bg.png');"
+  >
+    <Nav />
+   
+
+        <div data-aos="fade-up" data-aos-duration="800"
+          class="md:px-20  px-4 flex flex-col  w-full flex-1 items-center justify-center tracking-widest "
+        >
+        <h6 class="text-white text-center font-urbaneRounded-light mb-3" >HUNTINGTON BEACH, CA</h6>
+            <h1 class="font-urbaneRounded-medium text-center text-4xl sm:text-5xl md:text-7xl   text-[#89d232] mb-3">
+                REQUEST APPOINTMENT
+            </h1>
+            <p class="font-urbaneRounded-light text-center text-xl sm:text-2xl md:text-3xl max-w-[1200px] grid text-white my-6 leading-10 uppercase">
+                Connect with Our Dedicated Team: Prompt and Friendly Responses to Schedule Your Appointment at Your Convenience!
+            </p>
+        </div>
+  </main>
+
+  <section class="pb-10 px-6 mt-20 md:pb-28 md:px-20 lg:px-44 flex flex-col md:flex-row gap-8">
+    <div class="flex-1" data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">
+
+        <p class="text-[#89D232] font-urbaneRounded-light mb-8">
+            GET IN TOUCH
+          </p>
+          <h3 class="font-degular-medium text-4xl md:text-6xl max-w-[420px]  text-[#1d6292] uppercase mb-8">Get a fast
+            response, 
+            call us now
+          </h3>
+          <p class="font-degular-medium max-w-[540px] pb-14 border-b border-black">At Eco Clean Professional Cleaning Services, we don't just clean – we rejuvenate your working and living spaces. Experience the transformative power of our services and let us bring back the shine to your business or home. Contact us below for a free estimate and discover the difference Eco Clean PCS can make!
+          </p>
+
+          <h6 class="mt-8 text-3xl font-degular-medium mb-6">
+            Huntington Beach
+          </h6>
+          <p class="font-degular-medium text-lg mb-7 flex items-center gap-3">
+            <img class="w-[31px] h-[31px]" src="/images/phone-icon.png" />
+            <span>
+                (949) 915-5500
+                </span>
+            </p>
+          <p class="font-degular-medium text-lg  flex items-center gap-3">
+            <img class="w-[31px] h-[31px]" src="/images/mail-icon.png" />
+            <a href="info@ecocleanpcs.com">info@ecocleanpcs.com</a>
+            </p>
+
+           
+    </div>
+    <div class="md:w-[55%] mt-6 md:mt-0" data-aos="fade-right" data-aos-duration="800" data-aos-delay="50">
+        <form class="grid max-w-[100%] md:grid-cols-2 gap-4 md:gap-x-[15px] md:gap-y-7 py-7 px-4 sm:px-9 bg-[#F0F9F5] rounded-xl">
+            <h4 class="text-3xl md:text-4xl font-degular-medium md:col-span-2">Online Booking For Appointments</h4>
+            <input class=" bg-white px-2 md:px-6 py-3 md:py-[19px] border border-[#1D6292] text-xl text-[#1D6292] font-degular-medium rounded-[10px] outline-[#308ed0] placeholder:text-[#1D6292]" required type="text" placeholder="Name*"/>
+            <input class="bg-white px-2 md:px-6 py-3 md:py-[19px] border border-[#1d6292] text-xl text-[#1D6292] font-degular-medium rounded-[10px] outline-[#308ed0] placeholder:text-[#1D6292]" required type="email" placeholder="Email*"/>
+            <input class="bg-white px-2 md:px-6 py-3 md:py-[19px] border border-[#1d6292] text-xl text-[#1D6292] font-degular-medium rounded-[10px] outline-[#308ed0] placeholder:text-[#1D6292]" required type="tel" placeholder="Contact Number*"/>
+            <!-- <input class="bg-white px-2 md:px-6 py-3 md:py-[19px] border border-[#1d6292] text-xl text-[#1D6292] font-degular-medium rounded-[10px] outline-[#308ed0] placeholder:text-[#1D6292]" required  placeholder="Service"/> -->
+            <select aria-placeholder="Service" class="bg-white px-2 md:px-6 py-3 md:py-[19px] border border-[#1d6292] text-xl text-[#1D6292] font-degular-medium rounded-[10px] outline-[#308ed0] placeholder:text-[#1D6292]">
+                <option value="Carpet Cleaning">Carpet Cleaning</option>
+                <option value="Sofa Cleaning">Sofa Cleaning</option>
+                <option value="Power Washing">Power Washing</option>
+                <option value="Dumpster Cleaning">Dumpster Cleaning</option>
+                <option value="Industrial Floor Cleaning">Industrial Floor Cleaning</option>
+                <option value="Sidewalk & Concrete Cleaning">Sidewalk & Concrete Cleaning</option>
+              </select>
+            <textarea class="md:col-span-2 bg-white px-2 md:px-6 py-3 md:py-[19px] border border-[#1d6292] text-xl text-[#1D6292] font-degular-medium rounded-[10px] outline-[#308ed0] placeholder:text-[#1D6292] min-h-[190px]" required  placeholder="Message"/>
+
+            <div class="flex gap-4 md:col-span-2">
+                <input class="bg-white min-w-8 min-h-8 mt-2 border border-[#1d6292] text-xl text-[#1D6292] font-degular-medium rounded-[10px] outline-[#308ed0] placeholder:text-[#1D6292]" type="checkbox"  required  />
+                <p class="text-xl font-degular-medium">By providing your phone number, you consent to receive communications, including text messages, calls, and emails, in accordance with our <a href="#" class="underline">Terms of Use</a> and <a href="#" class="underline">Privacy Policy</a>.
+                </p>
+            </div>
+            <Button
+          text="REQUEST A QUOTE"
+          link="null"
+          classes="text-white border-primary text-primary px-7  text-center transition-all duration-300 hover:bg-primary hover:text-white "
+        />
+
+        </form>
+    </div>
+   
+  </section>
+
+  <section class="space-y-8 md:px-20 lg:px-44 px-4 py-4 md:pt-16 bg-[#308ed0]"><Footer/></section>
+  <!-- <Footer /> -->
+</Base>
