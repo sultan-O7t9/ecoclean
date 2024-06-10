@@ -12,6 +12,7 @@ export default {
           "Degular-Semibold",
           ...defaultTheme.fontFamily.sans,
         ],
+        degular: ["Degular-Regular", ...defaultTheme.fontFamily.sans],
         "urbaneRounded-medium": ["UrbaneRounded-Medium"],
         "urbaneRounded-light": ["UrbaneRounded-Light"],
       },
