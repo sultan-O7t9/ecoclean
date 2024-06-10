@@ -24,7 +24,7 @@ const {image, title, description,classes} = Astro.props as Props;
     <img src={image} alt={title} class="h-[55%] w-full object-cover"/>
     <div class="p-6 space-y-6">
         <h2 class="text-3xl md:text-4xl text-[#1d6292] font-degular-medium">{title}</h2>
-        <p class="font-urbaneRounded-medium text-lg">{description}</p>
+        <p class="font-urbaneRounded-light text-lg">{description}</p>
         <slot/>
     </div>
 </div>
