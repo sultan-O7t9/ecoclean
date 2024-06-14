@@ -7,9 +7,9 @@ interface Props {
 const {question, answer} = Astro.props as Props;
 ---
 
-<details class="px-10 py-7 cursor-pointer bg-white space-y-2 faq-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="120">
+<details class="px-6 md:px-10 py-4 md:py-7 cursor-pointer bg-white space-y-2 faq-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="120">
     <summary class="flex items-center justify-between">
-        <span class="text-2xl md:text-3xl font-degular-medium  text-[#1d6292]">{question}</span><span class="text-5xl md:text-7xl text-[#009900] toggle-icon">+</span>
+        <span class="text-xl md:text-3xl font-degular-medium  text-[#1d6292]">{question}</span><span class="text-3xl md:text-7xl text-[#009900] toggle-icon">+</span>
     </summary>
     
     <p class="leading-[26px] font-urbaneRounded-light">{answer}</p>

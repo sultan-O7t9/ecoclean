@@ -8,8 +8,8 @@ import Footer from "@components/Footer.astro";
 ---
 
 <Base
-  title="Eco Clean Professional Service"
-  description="Expertly Crafting Exceptional Spaces, Enriching Lives Through Thoughtful, Sustainable Transformation with Our Commitment to Eco-Friendly Practices and Community Enhancement"
+  title="Professional Cleaning Services Huntington Beach & Orange County"
+  description="Huntington Beach Orange County commercial cleaning service providing office cleaning, floor cleaning, carpet cleaning, window cleaning; daily, weekly, and monthly!"
   image="image/og-image.jpeg"
 >
   <!-- Hero Section -->
@@ -49,13 +49,13 @@ import Footer from "@components/Footer.astro";
   <!-- Section 2 -->
   <section class="space-y-8 md:px-44 px-8 py-16">
     <!-- <div class="flex items-center w-full"> -->
-    <div class="grid md:grid-cols-2  gird-cols-1 gap-8 gap-y-24 w-full ">
+    <div class="grid md:grid-cols-2  gird-cols-1 gap-8 md:gap-y-24 w-full ">
       <div class="flex flex-col justify-center gap-y-4" data-aos="fade-right" data-aos-duration="800">
         <p class="text-[#85cd32] font-urbaneRounded-light uppercase">
           Eco-Friendly Cleaning, Huntington Beach, CA
         </p>
         <h2
-          class="font-degular-semibold text-6xl  text-[#1d6292]  leading-snug"
+          class="font-degular-semibold text-4xl md:text-6xl  text-[#1d6292]  md:leading-snug"
         >
           YOUR SPACE,<br /> OUR MASTERY
         </h2>
@@ -80,12 +80,12 @@ import Footer from "@components/Footer.astro";
       </div>
       <!-- </div> -->
       <div data-aos="flip-left" data-aos-duration="800"
-        class="bg-gradient-to-br from-[#28a1da] to-[#2575ba] p-8  text-white"
+        class="bg-gradient-to-br from-[#28a1da] to-[#2575ba] p-8  text-white mt-8 md:mt-0"
       >
-        <h3 class=" text-4xl my-2 mb-3 font-degular-medium">
+        <h3 class=" text-2xl md:text-4xl my-2 mb-3 font-degular-medium">
           We Don't Just Clean; We Rejuvenate.
         </h3>
-        <p class="font-urbaneRounded-light leading-[26px] text-lg">
+        <p class="font-urbaneRounded-light leading-[26px] md:text-lg">
           From the cozy corners of your home to the expansive areas of your
           business, we bring a breath of fresh air into every space. Our
           expertise spans across carpets, upholstery, hard surfaces, windows,
@@ -98,8 +98,8 @@ import Footer from "@components/Footer.astro";
       <div data-aos="flip-left" data-aos-duration="800"
         class="bg-gradient-to-br from-[#28a1da] to-[#2575ba]  p-8 text-white"
       >
-        <h3 class=" text-4xl my-2 font-degular-medium mb-3">Our Team of Experts</h3>
-        <p class="font-urbaneRounded-light leading-[26px] text-lg ">
+        <h3 class=" text-2xl md:text-4xl my-2 font-degular-medium mb-3">Our Team of Experts</h3>
+        <p class="font-urbaneRounded-light leading-[26px] md:text-lg ">
           Our team, skilled in the latest eco-friendly cleaning techniques,
           ensures that your environment is not only spotless but also healthy
           and sustainable. With Eco Clean, you're not just hiring a cleaning
@@ -117,29 +117,29 @@ import Footer from "@components/Footer.astro";
     <p class="text-[#85cd32] font-urbaneRounded-light mb-4" data-aos="fade-right" data-aos-duration="600">
       SUSTAINABLE CLEANING SERVICE, HUNTINGTON BEACH, CA
     </p>
-    <h2 class=" text-6xl text-[#1d6292] font-degular-semibold mb-4" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50">FEATURED SERVICES</h2>
-    <p class="font-urbaneRounded-light leading-[26px] mb-16 text-lg" data-aos="fade-right" data-aos-duration="700" data-aos-delay="100">
+    <h2 class=" text-4xl md:text-6xl text-[#1d6292] font-degular-semibold mb-4" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50">FEATURED SERVICES</h2>
+    <p class="font-urbaneRounded-light leading-[26px] mb-6 md:mb-16 md:text-lg" data-aos="fade-right" data-aos-duration="700" data-aos-delay="100">
       Showcasing Our Cleaning Mastery, Detailed Precision in Every Task Elevates
       Your Space with Unmatched Expertise That Distinguishes Us in the Market,
       Ensuring Unrivaled Quality and Service
     </p>
 
     <div class="grid md:grid-cols-3 grid-cols-1 gap-8 justify-between ">
-      <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='100' class="h-[100%]">
-        <a href="/services/carpet-cleaning">
+      <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='100' class="min-h-[100%]">
+        <a href="/services/carpet-cleaning" class="min-h-[100%]">
 
-          <Card classes="h-[100%]"
+          <Card classes="min-h-[100%]"
             image="/images/carpet-cleaning.jpg"
             title="Carpet Cleaning"
             description="Dive deep into the fibers of your carpet, where our eco-friendly methods lift away dirt and restore vibrancy."
           />
         </a>
       </div>
-      <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='200' class="h-[100%]" >
+      <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='200' class="min-h-[100%]" >
      
-        <a href="/services/power-washing">
+        <a href="/services/power-washing" class="min-h-[100%]">
 
-        <Card classes="h-[100%]"
+        <Card classes="min-h-[100%]"
           image="/images/dumpster-cleaning.png"
           title="Power Washing"
           description="Blast away grime and restore the original beauty of your exteriors with our powerful, eco-conscious power washing services."
@@ -148,7 +148,7 @@ import Footer from "@components/Footer.astro";
       </div>
       <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay='300' class="min-h-[100%]" >
 
-        <a href="/services/dumpster-cleaning">
+        <a href="/services/dumpster-cleaning" class="min-h-[100%]">
         
 
         <Card classes="min-h-[100%]"
@@ -166,9 +166,9 @@ import Footer from "@components/Footer.astro";
     class="md:px-44 px-8 md:py-36 py-16 text-white text-center bg-[url('/images/bg-pattern-2.jpg')] bg-cover bg-no-repeat md:-translate-y-32 relative z-0"
   >
     <p data-aos="fade-up" data-aos-duration="800" class="font-urbaneRounded-light mb-4 uppercase">Sustainable Disposal, Huntington Beach, CA</p>
-    <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="50" class="text-6xl  font-degular-semibold mb-7 uppercase">Why Choose Eco Clean?</h2>
+    <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="50" class="text-4xl md:text-6xl  font-degular-semibold mb-5 md:mb-7 uppercase">Why Choose Eco Clean?</h2>
     <div  class="w-full flex justify-center items-center ">
-      <p class=" max-w-6xl font-urbaneRounded-light leading-[26px] text-lg tracking-wider">
+      <p class=" max-w-6xl font-urbaneRounded-light leading-[26px] md:text-lg tracking-wider">
         Discover the Unparalleled Impact of Eco-Friendly Excellence: Embark on a
         Journey Towards Sustainable Perfection with Our Green Solutions,
         Pioneering Environmental Responsibility in Every Clean
@@ -208,14 +208,14 @@ import Footer from "@components/Footer.astro";
   <!-- Section 5 -->
   <div class="bg-[url('/images/bg-pattern-1.jpg')] w-full  bg-fixed bg-cover bg-center bg-no-repeat md:-mt-32">
     <section
-    class="space-y-8 md:px-44 px-8  py-16 text-center text-white  "
+    class="space-y-4 md:space-y-8 md:px-44 px-8  py-16 text-center text-white  "
   >
     <div class="p-8 text-center flex flex-col items-center ">
       <p class="font-urbaneRounded-medium mb-6">ECO CLEAN SOLUTIONS, HUNTINGTON BEACH, CA</p>
-      <h2 class="text-3xl md:text-[3.25rem]  font-degular-semibold max-w-[700px] text-center md:leading-[4rem] mb-8">
+      <h2 class="text-3xl md:text-[3.25rem]  font-degular-semibold max-w-[700px] text-center md:leading-[4rem] mb-4 md:mb-8">
         TRANSFORM YOUR SPACE WITH ECO CLEAN TODAY!
       </h2>
-      <p class="font-urbaneRounded-light leading-[26px] text-lg">
+      <p class="font-urbaneRounded-light leading-[26px] md:text-lg">
         Discover the power of green cleaning with Eco Clean and make a positive impact on your environment now. Our expert team is ready to deliver top-notch, sustainable cleaning solutions that will refresh and revitalize your space. Don’t wait to enjoy a cleaner, healthier, and more sustainable environment. Connect with us today and take the first step towards a cleaner, greener home or office.
       </p>
     </div>
@@ -236,7 +236,7 @@ import Footer from "@components/Footer.astro";
   >
     <div class="space-y-8">
       <h2
-        class="text-6xl  text-[#1d6292] grid  font-degular-semibold" data-aos="fade-up" data-aos-duration="800" 
+        class="text-4xl md:text-6xl  text-[#1d6292] grid  font-degular-semibold" data-aos="fade-up" data-aos-duration="800" 
       >
         <span>MEET OUR ECO</span><span class="lg:text-nowrap">CLEAN WARRIORS</span>
       </h2>
@@ -261,8 +261,8 @@ import Footer from "@components/Footer.astro";
           class="w-full md:px-16 px-4"
         />
         <div class="space-y-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="120">
-          <h3 class="text-4xl  text-[#5470A4] px-4 md:px-0 font-degular-semibold">Brian Giannone</h3>
-          <p class="md:w-2/3 w-full md:px-0 px-4  font-urbaneRounded-light leading-[26px]">
+          <h3 class="text-3xl md:text-4xl  text-[#5470A4] px-4 mt-3 md:mt-0 md:px-0 font-degular-semibold">Brian Giannone</h3>
+          <p class="md:w-2/3 w-full md:px-0 mb-4 md:mb-0 px-4  font-urbaneRounded-light leading-[26px]">
             At the helm of our operations, Brion Giannone brings a dynamic blend
             of soles expertise and a passion for eco-friendly living. With a
             history in local food and beverage, Erion's leadership ensures our
@@ -279,8 +279,8 @@ import Footer from "@components/Footer.astro";
           class="w-full md:px-16 px-4"
         />
         <div class="space-y-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="120">
-          <h3 class="text-4xl  text-[#5470A4] px-4 md:px-0 font-degular-semibold">Dustin Dahlen</h3>
-          <p class="md:w-2/3 w-full md:px-0 px-4  font-urbaneRounded-light leading-[26px]">
+          <h3 class="text-3xl md:text-4xl mt-3 md:mt-0  text-[#5470A4] px-4 md:px-0 font-degular-semibold">Dustin Dahlen</h3>
+          <p class="md:w-2/3 w-full md:px-0 px-4 mb-4 md:mb-0  font-urbaneRounded-light leading-[26px]">
             Dustin, the powerhouse behind our pristine floors, embodies the
             essence of a clean and structured lifestyle His enthusiasm for
             fitness and health translates into meticulous attention to detail,
@@ -297,8 +297,8 @@ import Footer from "@components/Footer.astro";
           class="w-full md:px-16 px-4"
         />
         <div class="space-y-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="120">
-            <h3 class="text-4xl  text-[#5470A4] px-4 md:px-0 font-degular-semibold">Kyle Cook</h3>
-          <p class="md:w-2/3 w-full md:px-0 px-4  font-urbaneRounded-light leading-[26px]">
+            <h3 class="text-3xl md:text-4xl mt-3 md:mt-0 text-[#5470A4] px-4 md:px-0 font-degular-semibold">Kyle Cook</h3>
+          <p class="md:w-2/3 w-full md:px-0 px-4 mb-4 md:mb-0 font-urbaneRounded-light leading-[26px]">
             With a robust background in asphalt flooring, and construction, Kyle
             Cook is our go-to expert for technical and quality assurance.
             Alongside his wife Deana he navigates the marketing and digital
@@ -316,7 +316,7 @@ import Footer from "@components/Footer.astro";
   <section id="faq" class=" md:px-44 px-8  py-16 text-center bg-[#EEFAF5] ">
     <div class="flex items-center flex-col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="120">
       <p class="text-[#85cd32] font-urbaneRounded-light mb-4">Organic Cleaning, Huntington Beach, CA</p>
-      <h2 class=" text-[#1d6292] font-degular-semibold text-6xl mb-6">QUESTIONS? WE'VE GOT ANSWERS</h2>
+      <h2 class=" text-[#1d6292] font-degular-semibold text-4xl md:text-6xl mb-6">QUESTIONS? WE'VE GOT ANSWERS</h2>
       <p class="font-urbaneRounded-light leading-[26px] max-w-[1000px] text-center mb-16">
         Diving Deep to Address Your Queries: Providing Comprehensive Clarity and
         Demonstrating Our Expertise with Detailed, Insightful Answers to Foster
@@ -353,15 +353,15 @@ import Footer from "@components/Footer.astro";
 
   <!-- Form Section -->
   <section
-    class="md:flex flex-row   bg-[#308ed0] text-white md:h-[80vh] h-[60vh]"
+    class="md:flex flex-row   bg-[#308ed0] text-white md:min-h-[80vh] "
   >
-    <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="120" class="md:w-1/2 w-full h-[100%]  flex flex-col justify-center items-center px-8 md:px-0">
+    <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="120" class="md:w-1/2 w-full h-[100%]  flex flex-col justify-center items-center px-8 md:px-0 py-8 md:py-0">
       <div class="md:w-[60%] w-full  ">
         <p class="text-white   uppercase font-urbaneRounded-light mb-4">
           Environmentally safe Cleaning, Huntington Beach, CA
         </p>
-        <h2 class="text-6xl font-degular-semibold mb-4">REQUEST A QUOTE</h2>
-        <p class="font-urbaneRounded-light leading-[26px] text-xl ">
+        <h2 class="text-4xl md:text-6xl font-degular-semibold mb-4">REQUEST A QUOTE</h2>
+        <p class="font-urbaneRounded-light leading-[26px] md:text-xl ">
           Discover Your Custom Cleaning Solution: Complete Our Form for Prompt,
           Personalized Quote Crafted by Our Expert Team
         </p>
@@ -420,7 +420,7 @@ import Footer from "@components/Footer.astro";
         <Button
           text="REQUEST A QUOTE"
           link="/contact"
-          classes="text-white border-white text-center w-1/2 mt-8 transition-all duration-300 hover:bg-white hover:text-primary hover:border-white"
+          classes="text-nowrap text-white border-white text-center md:w-1/2 mt-8 transition-all duration-300 hover:bg-white hover:text-primary hover:border-white"
         />
       </form>
     </div>
@@ -431,12 +431,12 @@ import Footer from "@components/Footer.astro";
   <section class="space-y-8 md:px-44 px-8  py-16 ">
     <div class="space-y-4">
       <p class="text-[#85cd32] font-urbaneRounded-medium" data-aos="fade-right" data-aos-duration="800" data-aos-delay="120">TESTIMONIALS</p>
-      <h2 class="text-6xl text-[#1d6292] font-degular-semibold" data-aos="fade-right" data-aos-duration="800" data-aos-delay="120">WHAT PEOPLE SAY</h2>
+      <h2 class="text-4xl md:text-6xl text-[#1d6292] font-degular-semibold" data-aos="fade-right" data-aos-duration="800" data-aos-delay="120">WHAT PEOPLE SAY</h2>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="50" class="border-2 border-[#308ed0] p-8 space-y-4 md:h-[450px] h-[300px] relative">
-        <h3 class="text-[#1d6292] text-3xl font-degular-semibold ">Maia Walinsky</h3>
-        <p class="font-urbaneRounded-light leading-[26px]">
+      <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="50" class="border-2 border-[#308ed0] p-8 flex flex-col gap-4 md:h-[450px]  relative">
+        <h3 class="text-[#1d6292] text-2xl md:text-3xl font-degular-semibold ">Maia Walinsky</h3>
+        <p class="font-urbaneRounded-light leading-[26px] mb-8 md:mb-0">
           The staff at Eco Clean were extremely friendly and did an amazing job cleaning the floors of our restaurant, I would highly recommend them.
 We also have to have our dumpsters cleaned regularly that the city mandates and we will be using them for that as well…..it’s hard to find a good reliable team for that job as you can imagine.
         </p>
@@ -448,13 +448,12 @@ We also have to have our dumpsters cleaned regularly that the city mandates and 
           <img class="inline w-6" src="/images/star.png" alt="Rating star" />
         </div>
       </div>
-      <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="150" class="border-2 border-[#308ed0] p-8 space-y-4 md:h-[450px] h-[300px]  relative">
-        <div class="space-y-2">
-          <h3 class="text-[#1d6292] text-3xl font-degular-semibold ">Nick Lopez</h3>
-          <p class="font-urbaneRounded-light leading-[26px]">
+      <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="150" class="border-2 border-[#308ed0] p-8 flex flex-col gap-4 md:h-[450px]   relative">
+          <h3 class="text-[#1d6292] text-2xl md:text-3xl font-degular-semibold ">Nick Lopez</h3>
+          <p class="font-urbaneRounded-light leading-[26px] mb-8 md:mb-0">
             Just wanted to leave these guys a review for the fabulous work ECO provided. With all the construction in my area, my back deck and driveway are constantly subjected to dirt and buildup.  My deck is now spotless and there is no sign of dirt. Thanks guys I’ll see ya next month.
           </p>
-        </div>
+      
         <div class="space-x-1 absolute bottom-5">
           <img class="inline w-6" src="/images/star.png" alt="Rating star" />
           <img class="inline w-6" src="/images/star.png" alt="Rating star" />
@@ -463,9 +462,9 @@ We also have to have our dumpsters cleaned regularly that the city mandates and 
           <img class="inline w-6" src="/images/star.png" alt="Rating star" />
         </div>
       </div>
-      <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="250" class="border-2 border-[#308ed0] p-8 space-y-4 md:h-[450px] h-[300px]  relative">
-        <h3 class="text-[#1d6292] text-3xl font-degular-semibold ">Denise Marlborough</h3>
-        <p class="font-urbaneRounded-light leading-[26px]">
+      <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="250" class="border-2 border-[#308ed0] p-8 flex flex-col gap-4 md:h-[450px]   relative">
+        <h3 class="text-[#1d6292] text-2xl md:text-3xl font-degular-semibold ">Denise Marlborough</h3>
+        <p class="font-urbaneRounded-light leading-[26px] mb-8 md:mb-0">
           These guys are amazing!! Very friendly and professional. My patio looks brand new and I love the results.
 
         </p>
