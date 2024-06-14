@@ -16,9 +16,17 @@ const {question, answer} = Astro.props as Props;
 </details>
 
 <style>
-    summary {
-        list-style-type: "";
-    }
+    details > summary {
+    list-style: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary::marker {
+    display: none;
+}
 </style>
 
 <script>
