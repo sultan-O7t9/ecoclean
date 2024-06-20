@@ -1,0 +1,129 @@
+---
+import { twMerge } from 'tailwind-merge'
+interface Props {
+//     label: string;
+//     title: string;
+    
+    labelClasses?: string;
+}
+
+const {  labelClasses} = Astro.props as Props;
+---
+
+
+<button id="modal-btn" class={twMerge(labelClasses)}>
+   Privacy Policy
+</button>
+<div class="fixed z-50 top-0 left-0 w-screen h-screen hidden py-14 sm:py-8" id="modal-container">
+    <div id="modal-backdrop" class="w-full h-full bg-black bg-opacity-60 absolute -z-10 top-0 left-0"></div>
+    <div class="min-w-[300px] mx-auto max-w-[2500px] w-[90%] h-full bg-white flex flex-col p-4  overflow-y-auto">
+        <button id="close-btn" class="self-end">
+        &#10006;
+        </button>
+        <div class="flex flex-col">
+            <h3 class="mt-6 text-center text-3xl md:text-3xl text-[#1D6292] font-degular-medium mb-3">Privacy Policy</h3>
+            <div class="py-4 text-left">
+                <div class="px-4 sm:px-10">
+                    <div class="font-degular leading-[26px] mb-8 text-black">
+                        <p>
+                            These terms and conditions govern your use of this web site. By accessing this website, you are acknowledging and accepting these terms of use. These terms of use are subject to change by Eco Clean Professional Cleaning Services at any time and at our discretion without notice. Your use of this web site after any changes are implemented constitutes your acceptance of the changes. As a result, we encourage you to consult the terms and conditions each time you use this website.
+                            </p>
+                     </div>
+                    <h4 class="font-degular-semibold text-lg text-[#1D6292] mb-3">1. INTELLECTUAL PROPERTY
+                    </h4>
+                    <div class="font-degular leading-[26px] mb-8 text-black">
+                        <p>
+                            You acknowledge and agree that all content and materials available on this site are protected by copyrights, trademarks, service marks, patents, trade secrets, or other proprietary rights and laws. Except as expressly authorized by Eco Clean Professional Cleaning Services, you agree not to sell, license, rent, modify, distribute, copy, reproduce, transmit, publicly display, publicly perform, publish, adapt, edit, or create derivative works from such materials or content.
+                            </p>
+                            <br/>
+                            <br/>
+                            <p>
+                                As noted above, reproduction, copying, or redistribution for commercial purposes of any materials or design elements on this site is strictly prohibited without the express written permission of Eco Clean Professional Cleaning Services. For information on requesting such permission, please contact us at Eco Clean Professional Cleaning Services.
+                            </p>
+                     </div>
+                    <h4 class="font-degular-semibold text-lg text-[#1D6292] mb-3">2. THIRD PARTY REFERENCES / HYPERLINKS
+                    </h4>
+                    <div class="font-degular leading-[26px] mb-8 text-black">
+                        <p>
+                            This site may link you to other sites on the Internet. These sites may contain information or material that some people may find inappropriate or offensive. These other sites are not under the control of Eco Clean Professional Cleaning Services, and you acknowledge that Eco Clean Professional Cleaning Services is not responsible for the accuracy, copyright compliance, legality, decency, or any other aspect of the content of such sites. The inclusion of such a link does not imply endorsement of the site by or any association with its operators.
+                            </p>
+                     </div>
+                    <h4 class="font-degular-semibold text-lg text-[#1D6292] mb-3">3. CONTACTING US
+                    </h4>
+                    <div class="font-degular leading-[26px] mb-8 text-black">
+                        <p>
+                            If you need to contact us, you can email us at info@ecocleanpcs.com, call us at (949) 915-5500, or send us a letter at: 1120 Pacific Coast Highway Ste E Huntington Beach CA, 92648.                </p>
+                     </div>
+                    <h4 class="font-degular-semibold text-lg text-[#1D6292] mb-3">4. DISCLAIMER OF WARRANTIES
+                    </h4>
+                    <div class="font-degular leading-[26px] mb-8 text-black">
+                        <p>
+                            ALLMATERIALS, INFORMATION, SOFTWARE, PRODUCTS, AND SERVICES INCLUDED IN ORAVAILABLE THROUGH THIS SITE (THE "CONTENT") ARE PROVIDED "ASIS" AND "AS AVAILABLE" FOR YOUR USE. THE CONTENT IS PROVIDEDWITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOTLIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULARPURPOSE, OR NONINFRINGEMENT. Eco Clean Professional Cleaning Services AND ITS AGENTS DO NOT WARRANTTHAT THE CONTENT IS ACCURATE, RELIABLE OR CORRECT; THAT THIS SITE WILL BEAVAILABLE AT ANY PARTICULAR TIME OR LOCATION; THAT ANY DEFECTS OR ERRORS WILLBE CORRECTED; OR THAT THE CONTENT IS FREE OF VIRUSES OR OTHER HARMFULCOMPONENTS. YOUR USE OF THIS SITE IS SOLELY AT YOUR RISK. BECAUSE SOMEJURISDICTIONS DO NOT PERMIT THE EXCLUSION OF CERTAIN WARRANTIES, THESEEXCLUSIONS MAY NOT APPLY TO YOU.
+                     </div>
+                    <h4 class="font-degular-semibold text-lg text-[#1D6292] mb-3">5. LIMITATION OF LIABILITY
+                    </h4>
+                    <div class="font-degular leading-[26px] mb-8 text-black">
+                        <p>
+                            UNDER NO CIRCUMSTANCES SHALL Eco Clean Professional Cleaning Services ORITS AGENTS BE LIABLE FOR ANY DIRECT, INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL,OR CONSEQUENTIAL DAMAGES THAT RESULT FROM THE USE OF, OR INABILITY TO USE, THISSITE. THIS LIMITATION APPLIES WHETHER THE ALLEGED LIABILITY IS BASED ONCONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY, OR ANY OTHER BASIS, EVEN IF$ClientName HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. BECAUSE SOMEJURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL ORCONSEQUENTIAL DAMAGES, LIABILITY FOR Eco Clean Professional Cleaning Services IN SUCH JURISDICTIONSSHALL BE LIMITED TO THE EXTENT PERMITTED BY LAW.
+                            </p>
+                     </div>
+                    <h4 class="font-degular-semibold text-lg text-[#1D6292] mb-3">6. INDEMNIFICATION
+                    </h4>
+                    <div class="font-degular leading-[26px] mb-8 text-black">
+                        <p>
+                            Upon a request by Eco Clean Professional Cleaning Services, you agree to defend, indemnify, and hold Eco Clean Professional Cleaning Services and its other affiliated companies harmless, and their employees, contractors, officers, and directors from all liabilities, claims, and expenses, including attorney’s fees, that arise from your misuse of this site.
+                         </p>
+                     </div>
+                    <h4 class="font-degular-semibold text-lg text-[#1D6292] mb-3">7. SEVERABILITY AND INTEGRATION
+                    </h4>
+                    <div class="font-degular leading-[26px] mb-8 text-black">
+                        <p>
+                            Unless otherwise specified herein, this agreement constitutes the entire agreement between you and Eco Clean Professional Cleaning Services with respect to this site and supersedes all prior or contemporaneous communications between you and Eco Clean Professional Cleaning Services with respect to this site. If any part of these Terms of Use is held invalid or unenforceable, that portion shall be construed in a manner consistent with applicable law to reflect, as nearly as possible, the original intentions of the parties, and the remaining portions shall remain in full force and effect.
+                            </p>
+                     </div>
+                    <h4 class="font-degular-semibold text-lg text-[#1D6292] mb-3">8. CALL TO ACTION DISCLOSURE
+                    </h4>
+                    <div class="font-degular leading-[26px] mb-8 text-black">
+                        <p>
+                            Direct contact SMS will be used to contact you related to website and website lead capture form for Eco Clean Professional Cleaning Services and the dental services advertised herein. Message and data rates may apply. Check with your carrier for more information.
+                            <br/>
+                            <br/>
+                            Message frequency varies but you may opt out of SMS communication at any time by sending "STOP" in reply to any SMS communications. 
+                            <br/>
+                            <br/>
+                            You may contact customer support by typing "HELP" to (949) 915-5500 or calling us at (949) 915-5500.  
+                            </p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const btn=document.getElementById("modal-btn");
+    const container=document.getElementById("modal-container")
+    const backdrop=document.getElementById("modal-backdrop")
+    const closeBtn=document.getElementById("close-btn")
+
+    if(btn){
+        btn.addEventListener("click",()=>{
+            if(container){
+                container.style.display="block"
+            }
+        })
+    }
+    if(backdrop){
+        backdrop.addEventListener("click",(e)=>{
+            e.stopPropagation();
+            if(container)
+            container.style.display="none"
+        })
+    }
+    if(closeBtn)
+    closeBtn.addEventListener("click",(e)=>{
+            e.stopPropagation();
+            if(container)
+            container.style.display="none"
+        })
+</script>

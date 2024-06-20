@@ -5,6 +5,8 @@ import Button from "@components/Button.astro";
 import Card from "@components/Card.astro";
 import FAQ from "@components/Landing/FAQ.astro";
 import Footer from "@components/Footer.astro";
+import TermsOfUseModal from "@components/TermsOfUseModal.astro";
+import PrivacyModal from "@components/PrivacyModal.astro";
 ---
 
 <Base
@@ -51,7 +53,7 @@ import Footer from "@components/Footer.astro";
 </a>
           <p class="font-degular-medium text-lg mb-7 flex items-center gap-3">
             <img class="w-[31px] h-[31px]" src="/images/phone-icon.png" />
-            <a  href="tel:949915550">
+            <a  href="tel:9499155500">
                 (949) 915-5500
                 </a>
             </p>
@@ -79,12 +81,19 @@ import Footer from "@components/Footer.astro";
               </select>
             <textarea name="message" class="md:col-span-2 bg-white px-2 md:px-6 py-3 md:py-[19px] border border-[#1d6292] text-xl text-[#1D6292] font-degular-medium rounded-[10px] outline-[#308ed0] placeholder:text-[#1D6292] min-h-[190px]" required  placeholder="Message"/>
 
-            <div class="flex gap-4 md:col-span-2">
+            <div class="flex gap-4 col-span-2 w-full">
                 <input class="bg-white min-w-8 min-h-8 mt-2 border border-[#1d6292] text-xl text-[#1D6292] font-degular-medium rounded-[10px] outline-[#308ed0] placeholder:text-[#1D6292]" type="checkbox"  required  />
-                <p class="md:text-xl font-degular-medium">By providing your phone number, you consent to receive communications, including text messages, calls, and emails, in accordance with our <a href="#" class="underline">Terms of Use</a> and <a href="#" class="underline">Privacy Policy</a>.
+                <div class="md:text-xl font-degular-medium">
+                  <span>
+                    By providing your phone number, you consent to receive communications, including text messages, calls, and emails, in accordance with our 
+                  </span>
+                  <TermsOfUseModal labelClasses="underline" />
+                  <span> and </span>
+                  <PrivacyModal labelClasses="underline" />
                 </p>
             </div>
-            <button type="submit" class=" border-primary text-primary px-7  text-center transition-all duration-300 hover:bg-primary hover:text-white py-2 border-2 block w-fit">
+          </div>
+            <button type="submit" class=" border-primary text-primary px-7  text-center transition-all duration-300  hover:bg-primary hover:text-white py-2 border-2 block w-fit text-nowrap">
               REQUEST A QUOTE
             </button>
            

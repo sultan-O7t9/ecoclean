@@ -1,12 +1,17 @@
+---
+import PrivacyModal from "./PrivacyModal.astro";
+import TermsOfUseModal from "./TermsOfUseModal.astro";
+---
+
 <footer class="bg-[#308ed0] text-white ">
     <div class="grid md:grid-cols-4 grid-cols-1 gap-16">
-
+        
         <div class="space-y-4">
             <a href="/contact" >
 
                 <h4 class="text-[2.2rem] font-degular-medium">CONTACT US</h4>
             </a>
-            <a href="tel:949915550" class="block  font-degular hover:underline underline-offset-2">(949) 915-5500</a>
+            <a href="tel:9499155500" class="block  font-degular hover:underline underline-offset-2">(949) 915-5500</a>
             <p class=" font-degular flex flex-col">
                 <span>Monday Thu 8-5</span>
                 <span>Friday 8-12</span>
@@ -57,5 +62,14 @@
 
         <!-- <img src="/images/map.jpg" alt="Location of Eco Clean On Map" class="w-full"/> -->
     </div>
-    <p class="mt-14 w-full text-center mb-3 text-lg font-degular-medium">© 2024 Eco Clean. All rights reserved. Privacy Policy | Terms of Use</p>
+    <div class="mt-14 w-full text-center mb-3 text-lg font-degular-medium">
+        <span>
+            © 2024 Eco Clean. All rights reserved. 
+        </span>
+        <PrivacyModal/>
+        <span>
+            | 
+            </span>
+        <TermsOfUseModal/>
+    </div>
 </footer>
