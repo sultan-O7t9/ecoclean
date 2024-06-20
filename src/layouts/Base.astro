@@ -69,7 +69,8 @@ const {title, description, image} = Astro.props as LayoutProps;
   function gtag(){dataLayer.push(arguments);}
   // @ts-expect-error: gtag exists
   gtag('js', new Date());
-
+  
+  // @ts-expect-error: gtag exists
   gtag('config', 'G-WPC50K5LND');
 </script>
 <body class="min-w-full">
